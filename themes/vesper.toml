@@ -1,0 +1,142 @@
+"attribute" = { fg = "gray", modifiers = ["italic"] }
+
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.doc" = { fg = "comment_doc", modifiers = ["italic"] }
+
+"constant" = { fg = "teal" }
+"constant.character.escape" = { fg = "orange" }
+"constructor" = { fg = "orange" }
+
+"diagnostic" = { underline = { color = "orange", style = "curl" } }
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.info" = { underline = { color = "purple", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "orange", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+
+"error" = { fg = "red" }
+"warning" = { fg = "orange" }
+"info" = { fg = "purple" }
+"hint" = { fg = "hint" }
+
+"diff.delta" = { fg = "orange" }
+"diff.minus" = { fg = "red" }
+"diff.plus" = { fg = "green" }
+
+"function" = { fg = "function", modifiers = ["bold"] }
+"function.builtin" = { fg = "function" }
+"function.macro" = { fg = "function" }
+
+"keyword" = { fg = "keyword", modifiers = ["italic"] }
+"keyword.control.import" = { fg = "keyword", modifiers = ["italic"] }
+
+"label" = { fg = "orange" }
+
+"markup.bold" = { modifiers = ["bold"] }
+"markup.heading" = "orange"
+"markup.italic" = { modifiers = ["italic"] }
+"markup.link.text" = "text"
+"markup.link.url" = { fg = "green", modifiers = ["underlined"] }
+"markup.raw" = "green"
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+
+"module" = { fg = "purple" }
+"namespace" = { fg = "text" }
+
+"operator" = { fg = "muted" }
+
+"punctuation" = { fg = "muted" }
+"punctuation.bracket" = { fg = "bracket" }
+"punctuation.delimiter" = { fg = "bracket" }
+"punctuation.special" = { fg = "muted" }
+
+"special" = { fg = "orange" }
+
+"string" = { fg = "green" }
+"string.regexp" = { fg = "green" }
+"string.special" = { fg = "green" }
+"string.symbol" = { fg = "green" }
+
+"tag" = { fg = "orange" }
+
+"type" = { fg = "orange" }
+"type.enum.variant" = { modifiers = ["italic"] }
+"type.interface" = { fg = "pink", modifiers = ["italic"] }
+
+"ui.background" = { bg = "bg" }
+"ui.bufferline" = { fg = "muted", bg = "bg" }
+"ui.bufferline.active" = { fg = "text", bg = "bg_active" }
+"ui.bufferline.background" = { bg = "bg" }
+
+"ui.cursor" = { fg = "bg", bg = "text" }
+"ui.cursor.insert" = { fg = "bg", bg = "text" }
+"ui.cursor.normal" = { fg = "bg", bg = "text" }
+"ui.cursor.select" = { fg = "bg", bg = "orange" }
+"ui.cursor.match" = { fg = "text", bg = "bg_hover" }
+
+"ui.cursor.primary" = { bg = "bg_hover", fg = "text" }
+"ui.cursor.primary.insert" = { fg = "bg", bg = "text" }
+"ui.cursor.primary.normal" = { fg = "bg", bg = "text" }
+"ui.cursor.primary.select" = { fg = "bg", bg = "orange" }
+
+"ui.cursorline" = { bg = "bg_active" }
+"ui.cursorline.primary" = { bg = "bg_highlight" }
+
+"ui.help" = { bg = "bg", fg = "muted" }
+"ui.linenr" = { fg = "line_nr" }
+"ui.linenr.selected" = { fg = "text" }
+"ui.menu" = { fg = "text", bg = "bg" }
+"ui.menu.selected" = { fg = "text", bg = "bg_hover", modifiers = ["bold"] }
+"ui.popup" = { bg = "bg" }
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection_primary" }
+
+"ui.statusline" = { fg = "muted", bg = "bg" }
+"ui.statusline.inactive" = { fg = "disabled", bg = "bg" }
+"ui.statusline.insert" = { fg = "bg", bg = "green", modifiers = ["bold"] }
+"ui.statusline.normal" = { fg = "bg", bg = "muted", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg", bg = "orange", modifiers = ["bold"] }
+
+"ui.text" = { fg = "text" }
+"ui.text.focus" = { fg = "text" }
+"ui.text.directory" = { fg = "purple" }
+"ui.virtual.inlay-hint" = { fg = "hint" }
+"ui.virtual.jump-label" = { fg = "orange", modifiers = ["bold"] }
+"ui.virtual.ruler" = { bg = "bg_highlight" }
+"ui.virtual.whitespace" = "bg_hover"
+"ui.virtual.wrap" = { fg = "bg_hover" }
+"ui.window" = { bg = "bg" }
+
+"variable" = { fg = "text" }
+"variable.builtin" = { fg = "muted" }
+"variable.other.member" = { fg = "property", modifiers = ["italic"] }
+"variable.parameter" = { fg = "parameter" }
+
+[palette]
+bg = "#101010"
+bg_active = "#191919"
+bg_highlight = "#282828"
+bg_hover = "#282828"
+text = "#FFFFFF"
+muted = "#A0A0A0"
+disabled = "#7E7E7E"
+placeholder = "#7E7E7E"
+comment = "#505050"
+comment_doc = "#506070"
+line_nr = "#505050"
+bracket = "#606060"
+hint = "#474747"
+selection = "#262645"
+selection_primary = "#2E2E55"
+orange = "#FFC799"
+green = "#99FFE4"
+red = "#FF8080"
+pink = "#FFC7F9"
+purple = "#aca1cf"
+blue = "#b9aeda"
+teal = "#B2E6DC"
+function = "#FFDEC4"
+property = "#9AB0AB"
+parameter = "#B38C6D"
+keyword = "#808080"
+gray = "#A0A0A0"

@@ -1,0 +1,114 @@
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+[language-server.gopls]
+command = "gopls"
+
+[language-server.typescript-language-server]
+command = "typescript-language-server"
+
+[language-server.bash-language-server]
+command = "bash-language-server"
+
+[language-server.zls]
+command = "zls"
+
+[language-server.nixd]
+command = "nixd"
+
+[language-server.typos-lsp]
+command = "typos-lsp"
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer"]
+formatter = { command = "rustfmt", args = ["--edition", "2021"] }
+auto-format = true
+
+[[language]]
+name = "go"
+language-servers = ["gopls"]
+formatter = { command = "gofumpt" }
+auto-format = true
+
+[[language]]
+name = "python"
+language-servers = ["typos-lsp"]
+formatter = { command = "ruff", args = ["format"] }
+auto-format = true
+
+[[language]]
+name = "typescript"
+language-servers = ["typescript-language-server"]
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+auto-format = true
+
+[[language]]
+name = "javascript"
+language-servers = ["typescript-language-server"]
+formatter = { command = "prettier", args = ["--parser", "babel"] }
+auto-format = true
+
+[[language]]
+name = "tsx"
+language-servers = ["typescript-language-server"]
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+auto-format = true
+
+[[language]]
+name = "jsx"
+language-servers = ["typescript-language-server"]
+formatter = { command = "prettier", args = ["--parser", "babel"] }
+auto-format = true
+
+[[language]]
+name = "json"
+formatter = { command = "prettier", args = ["--parser", "json"] }
+auto-format = true
+
+[[language]]
+name = "html"
+formatter = { command = "prettier", args = ["--parser", "html"] }
+auto-format = true
+
+[[language]]
+name = "css"
+formatter = { command = "prettier", args = ["--parser", "css"] }
+auto-format = true
+
+[[language]]
+name = "yaml"
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
+auto-format = true
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo" }
+auto-format = true
+
+[[language]]
+name = "nix"
+language-servers = ["nixd"]
+formatter = { command = "nixfmt" }
+auto-format = true
+
+[[language]]
+name = "zig"
+language-servers = ["zls"]
+formatter = { command = "zig", args = ["fmt"] }
+auto-format = true
+
+[[language]]
+name = "bash"
+language-servers = ["bash-language-server"]
+auto-format = true
+
+[[language]]
+name = "fish"
+formatter = { command = "fish_indent" }
+auto-format = true
+
+[[language]]
+name = "markdown"
+formatter = { command = "prettier", args = ["--parser", "markdown"] }
+auto-format = true
